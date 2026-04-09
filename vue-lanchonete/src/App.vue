@@ -11,7 +11,12 @@ import ComponentePrincipal from './components/ComponentePrincipal.vue';
 </template>
 
 <style scoped>
-
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 .header{
   display: flex;
   align-items: center;

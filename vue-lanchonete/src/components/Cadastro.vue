@@ -18,7 +18,7 @@ function addItem() {
         id:Date.now(),
         category:form.category,
         name: form.name,
-        price: Number(form.price).toFixed(2),
+        price: Number(form.price),
         available:form.available
     })
 
@@ -27,7 +27,8 @@ function addItem() {
     form.name = '';
     form.price = '';
     form. available = false;
-    console.log("deu certo")
+    console.log(items)
+
 }
 
 </script>

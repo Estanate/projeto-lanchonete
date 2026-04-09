@@ -9,10 +9,5 @@ import Cardapio from './Cardapio.vue';
 </template>
 
 <style scoped>
-* {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
+
 </style>
