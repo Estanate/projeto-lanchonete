@@ -157,14 +157,14 @@ const avaragePrice = computed(() => {
   transform: scale(1.05);
 }
 
-/* DISPONÍVEL */
 .disponivel {
+    order: 0;
   background: linear-gradient(135deg, #00c853, #009624);
   color: white;
 }
 
-/* INDISPONÍVEL */
 .indisponivel {
+    order: 1;
   background: linear-gradient(135deg, #d50000, #9b0000);
   color: #ddd;
 }
