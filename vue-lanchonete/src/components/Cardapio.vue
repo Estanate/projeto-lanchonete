@@ -117,7 +117,6 @@ const avaragePrice = computed(() => {
   color: #ffcc00;
 }
 
-/* RESUMO */
 .resumos {
   display: flex;
   justify-content: center;
@@ -134,7 +133,6 @@ const avaragePrice = computed(() => {
   border-left: 4px solid #ffcc00;
 }
 
-/* LISTA */
 .items-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -159,21 +157,20 @@ const avaragePrice = computed(() => {
 
 .disponivel {
     order: 0;
-  background: linear-gradient(135deg, #00c853, #009624);
+  background: #207632;
   color: white;
 }
 
 .indisponivel {
     order: 1;
-  background: linear-gradient(135deg, #d50000, #9b0000);
-  color: #ddd;
+  background:#700505;
+  color: #707070;
 }
 
 .indisponivel span {
   text-decoration: line-through;
 }
 
-/* TEXTO */
 .category {
   font-size: 12px;
   opacity: 0.8;
@@ -189,7 +186,6 @@ const avaragePrice = computed(() => {
   color: #ffeb3b;
 }
 
-/* BOTÃO */
 .delete {
   margin-top: auto;
   padding: 8px;
@@ -203,8 +199,4 @@ const avaragePrice = computed(() => {
 .delete:hover {
   background: #ff5252;
 }
-
-
-/* Formulario */
-
 </style>
