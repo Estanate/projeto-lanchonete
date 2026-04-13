@@ -89,32 +89,122 @@ const avaragePrice = computed(() => {
 </template>
 
 <style scoped>
-.items-list{
-    display: flex;
-    gap: 10px;
+.filters {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
-.items{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    border-radius: 5px;
-    padding: 30px;
-    margin-bottom:10px;
+.filters form {
+  display: flex;
+  gap: 15px;
+  background: #222;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
-.disponivel{
-    order: 0;
-    background-color: rgb(9, 157, 103);
+.filters label {
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.indisponivel{
-    order: 1;
-    color: black;
-    background-color: rgb(215, 25, 18);
-    span{
-    text-decoration: line-through;
-    }
+.filters input {
+  margin-right: 5px;
 }
+
+.filters label:hover {
+  color: #ffcc00;
+}
+
+/* RESUMO */
+.resumos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.resumos p {
+  background: #222;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border-left: 4px solid #ffcc00;
+}
+
+/* LISTA */
+.items-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARD */
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.items:hover {
+  transform: scale(1.05);
+}
+
+/* DISPONÍVEL */
+.disponivel {
+  background: linear-gradient(135deg, #00c853, #009624);
+  color: white;
+}
+
+/* INDISPONÍVEL */
+.indisponivel {
+  background: linear-gradient(135deg, #d50000, #9b0000);
+  color: #ddd;
+}
+
+.indisponivel span {
+  text-decoration: line-through;
+}
+
+/* TEXTO */
+.category {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 16px;
+  color: #ffeb3b;
+}
+
+/* BOTÃO */
+.delete {
+  margin-top: auto;
+  padding: 8px;
+  border-radius: 6px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete:hover {
+  background: #ff5252;
+}
+
+
+/* Formulario */
 
 </style>

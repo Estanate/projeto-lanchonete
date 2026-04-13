@@ -67,5 +67,62 @@ function addItem() {
 </template>
 
 <style scoped>
+.cadastro {
+  max-width: 400px;
+  margin: 30px auto;
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
 
+.cadastro h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input, select {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #ffcc00;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ffdb4d;
+}
 </style>

@@ -11,26 +11,26 @@ import ComponentePrincipal from './components/ComponentePrincipal.vue';
 </template>
 
 <style scoped>
-* {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-.header{
+.header {
   display: flex;
   align-items: center;
-  background-color: #000;
+  justify-content: center;
+  background: linear-gradient(90deg, #000, #222);
   color: #fff;
-  padding: 10px;
-  .logo-header{
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-  }
-  .name-header{
-    font-size: 24px;
-    font-weight: bold;
-  }
+  padding: 15px;
+  gap: 15px;
+  border-bottom: 3px solid #ffcc00;
+}
+
+.logo-header {
+  width: 60px;
+  height: 60px;
+}
+
+.name-header {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ffcc00;
 }
 </style>
